@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 100
+target-version = ['py27']
+
+[tool.poetry]
+name = "fakenigma"
+version = "0.1.0"
+description = ""
+authors = ["Andreas Oberritter <obi@saftware.de>"]
+license = "MIT"
+repository = "https://github.com/mtdcr/fakenigma"
+packages = [
+    { include = "enigma.py", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.6"
+requests = "^2"
+six = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
